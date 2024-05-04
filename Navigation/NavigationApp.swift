@@ -11,8 +11,10 @@ import SwiftUI
 struct NavigationApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
+            NavigationSplitView {
                 SampleList()
+            } detail: {
+                Text("Select an item")
             }
         }
     }

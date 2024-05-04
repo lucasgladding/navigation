@@ -7,34 +7,25 @@
 
 import SwiftUI
 
-let items = [
-    Sample(name: "Item 1"),
-    Sample(name: "Item 2"),
-    Sample(name: "Item 3"),
-    Sample(name: "Item 4"),
-    Sample(name: "Item 5")
-]
-
 struct SampleList: View {
     @State
-    var state = SampleState()
+    var items = [
+        Sample(name: "Item 1"),
+        Sample(name: "Item 2"),
+        Sample(name: "Item 3"),
+        Sample(name: "Item 4"),
+        Sample(name: "Item 5")
+    ]
 
     var body: some View {
-        List(state.items) { item in
-            NavigationLink(value: item) {
+        List(items) { item in
+            NavigationLink {
+                SampleInfo(sample: item)
+            } label: {
                 Text(item.name)
             }
         }
-        .navigationDestination(for: Sample.self) { sample in
-            SampleInfo(sample: sample)
-        }
         .navigationTitle("Home")
-        .onAppear {
-            state.items = items
-        }
-        .onChange(of: items) {
-            state.items = items
-        }
     }
 }
 
