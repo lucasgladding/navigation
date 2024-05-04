@@ -12,7 +12,6 @@
 		A04831562BE2AB9E009925DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04831552BE2AB9E009925DC /* Preview Assets.xcassets */; };
 		A04831602BE2AB9E009925DC /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048315F2BE2AB9E009925DC /* NavigationTests.swift */; };
 		A048316A2BE2AB9E009925DC /* NavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04831692BE2AB9E009925DC /* NavigationUITests.swift */; };
-		A048316C2BE2AB9E009925DC /* NavigationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048316B2BE2AB9E009925DC /* NavigationUITestsLaunchTests.swift */; };
 		A04831792BE2ABCA009925DC /* SampleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04831782BE2ABCA009925DC /* SampleList.swift */; };
 		A048317B2BE2ABE3009925DC /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048317A2BE2ABE3009925DC /* Sample.swift */; };
 		A048317D2BE2AC5E009925DC /* SampleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048317C2BE2AC5E009925DC /* SampleInfo.swift */; };
@@ -45,11 +44,11 @@
 		A048315F2BE2AB9E009925DC /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
 		A04831652BE2AB9E009925DC /* NavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04831692BE2AB9E009925DC /* NavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUITests.swift; sourceTree = "<group>"; };
-		A048316B2BE2AB9E009925DC /* NavigationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A04831782BE2ABCA009925DC /* SampleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleList.swift; sourceTree = "<group>"; };
 		A048317A2BE2ABE3009925DC /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		A048317C2BE2AC5E009925DC /* SampleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleInfo.swift; sourceTree = "<group>"; };
 		A04831842BE5C5AD009925DC /* SampleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleState.swift; sourceTree = "<group>"; };
+		A04831862BE5D1DF009925DC /* NavigationUI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = NavigationUI.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +79,7 @@
 		A04831422BE2AB9D009925DC = {
 			isa = PBXGroup;
 			children = (
+				A04831862BE5D1DF009925DC /* NavigationUI.xctestplan */,
 				A048314D2BE2AB9D009925DC /* Navigation */,
 				A048315E2BE2AB9E009925DC /* NavigationTests */,
 				A04831682BE2AB9E009925DC /* NavigationUITests */,
@@ -131,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				A04831692BE2AB9E009925DC /* NavigationUITests.swift */,
-				A048316B2BE2AB9E009925DC /* NavigationUITestsLaunchTests.swift */,
 			);
 			path = NavigationUITests;
 			sourceTree = "<group>";
@@ -286,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A048316C2BE2AB9E009925DC /* NavigationUITestsLaunchTests.swift in Sources */,
 				A048316A2BE2AB9E009925DC /* NavigationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
